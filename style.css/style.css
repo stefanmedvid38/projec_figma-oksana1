@@ -1,0 +1,155 @@
+*{
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: normal;
+}
+.container{
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;   /* Центр логотипа */
+  align-items: center;       /* Вирівнюємо по вертикалі */
+  height: 79.2px;              /* Ваша висота */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.menu-left,
+.menu-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;       /* Вирівнюємо лінки по вертикалі */
+}
+
+.menu-left {
+  margin-right: 463px;       /* Відступ від логотипа */
+}
+
+.menu-right {
+  margin-left: 463px;        /* Відступ від логотипа */
+}
+
+.logo-block img {
+  height: 25px;              /* Логотип трохи менший, ніж висота header */
+  display: block;
+  object-fit: contain;       /* Краще масштабування */
+}
+
+.menu-left a,
+.menu-right a {
+  font-size: 14px;           /* Нормальний розмір тексту */
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;       /* Вирівнюємо текст по центру */
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.logo-block {
+  margin: 0 463px;
+  display: flex;
+  align-items: center;
+}
+
+.left-menu{
+    justify-content: flex-start;
+}
+.right-menu{
+    justify-content: flex-end;
+}
+
+
+.logo-container{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+.logo-block{
+    margin: 0 25px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.menu:not(:first-of-type){
+    display: inline-block;
+    margin-left: 48px;
+}
+.link{
+     text-decoration: none;
+     color:  #111116;
+     font-size:  13px;
+     padding: 8px 19px;
+ }
+
+
+.images{
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 15px;
+}
+.form{
+    border-radius: 15px;
+    width: 420px;
+    height: 65px;
+    background: #fff;
+    margin: 5px auto;
+    padding: 0 60px 0 20px;
+    font-size: 1.5rem;
+    line-height: 72px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.search-form{
+    position: relative;
+    max-width: 447px;
+    margin: 0 auto;
+}
+
+.search-icon{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+}
+.search-icon:hover{
+    transform: translateY(-50%) scale(1.1);
+}
+form:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "Inria Sans", sans-serif;
+  }
+
+.text{
+    font: 700 60px "Inria Sans", sans-serif;
+    color:#fff;;
+}
+
+.full-width-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
