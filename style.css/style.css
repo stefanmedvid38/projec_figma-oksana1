@@ -965,3 +965,129 @@ color: #2a2a37;
     gap: 10px;
   }
 }
+
+/* Базові стилі залишаються твоїми, тут - тільки доповнення */
+
+/* Загальні правила для адаптивності */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Контейнер робимо адаптивним */
+.container {
+  padding: 0 15px;
+}
+
+/* --- Header --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 79.2px;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* дозволяє переносити при вузьких */
+}
+
+/* Логотип по центру */
+.logo-block {
+  flex-shrink: 0;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Меню */
+.menu-left, .menu-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Посилання */
+.menu-left a,
+.menu-right a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* --- Адаптивність --- */
+@media (max-width: 992px) {
+  .menu-left, .menu-right {
+    margin: 0;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo-block {
+    margin-bottom: 15px;
+  }
+
+  .menu-left, .menu-right {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin: 5px 0;
+  }
+}
+
+/* --- Контент --- */
+.content {
+  display: flex;
+  gap: 120px;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content .text, .content .image {
+  flex: 1;
+}
+
+/* Адаптивний контент */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 15px;
+  }
+
+  .content .text, .content .image {
+    width: 100%;
+    flex: unset;
+  }
+}
+
+/* Кнопки адаптивні */
+.button, .button_blue, .button_White {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Прикрутимо масштабування шрифтів */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .text-title {
+    font-size: 18px;
+  }
+
+  .text-p {
+    font-size: 14px;
+  }
+}
