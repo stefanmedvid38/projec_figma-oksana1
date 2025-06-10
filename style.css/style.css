@@ -595,3 +595,143 @@ color: #2a2a37;
   height: 16px;
 }
 
+
+/* 📱 МОБІЛЬНА АДАПТАЦІЯ ДЛЯ ЕКРАНІВ ДО 768px */
+@media (max-width: 768px) {
+  /* Загальні скидання */
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  .nav,
+  .header {
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .menu-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-container,
+  .logo-block {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .images {
+    position: static;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .form {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .search-form {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    padding: 20px 15px;
+  }
+
+  .button,
+  .button_blue,
+  .button_White {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .zillow-card,
+  .grop,
+  .model {
+    width: 100%;
+    max-width: 360px;
+    margin: 10px auto;
+  }
+
+  .background {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .zillow-block {
+    padding: 15px;
+  }
+
+  .zillow-block .menu {
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .zillow-footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .store-buttons a img {
+    width: 140px;
+    margin: 5px;
+  }
+
+  .zillow-social {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .zillow-copy {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
