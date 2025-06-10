@@ -917,3 +917,51 @@ color: #2a2a37;
 
   /* І ще інші блоки, які потрібно підлаштувати */
 }
+
+/* Базовий стиль шапки */
+.header {
+  display: flex;
+  justify-content: space-between; /* Логотип зліва, меню справа */
+  align-items: center;
+  padding: 0 20px;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+/* Логотип */
+.logo-block img {
+  height: 25px;
+}
+
+/* Меню */
+.menu-left,
+.menu-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Лінки меню */
+.menu-left a,
+.menu-right a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+/* При вузьких екранах — мобільна адаптація */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 15px;
+  }
+  .logo-block {
+    margin-bottom: 10px;
+  }
+  .menu-left,
+  .menu-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
