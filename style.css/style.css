@@ -852,3 +852,68 @@ color: #2a2a37;
     border-right: none !important;
   }
 }
+
+/* Для мобільних пристроїв — ширина до 600px */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .menu-left,
+  .menu-right {
+    margin: 0;
+    gap: 10px;
+  }
+
+  .menu-left,
+  .menu-right,
+  .logo-block {
+    justify-content: center;
+  }
+
+  .logo-block img {
+    height: 40px;
+  }
+
+  .menu-left a,
+  .menu-right a {
+    font-size: 14px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main {
+    padding: 20px 15px;
+  }
+
+  .form {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .button,
+  .button_blue,
+  .button_White {
+    width: 100%;
+    max-width: none;
+  }
+
+  .model {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  /* І ще інші блоки, які потрібно підлаштувати */
+}
